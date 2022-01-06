@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bulma-styles.css">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./utils/const.js"></script>
+    <script defer src="./scripts/notification.js"></script>
     <script defer src="./scripts/hamburguer.js"></script>
     <script defer src="./scripts/scroll.js"></script>
     <script defer src="./scripts/api.js"></script>
@@ -140,6 +141,18 @@
         <section id="api-tester-section" class="section is-hidden-mobile">
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span class="underline-title">APIs Tester</span></h1>
+            </div>
+            <div id="api-tester-notification" class="columns is-centered">
+                <div class="column is-8">
+                    <div class="notification is-5 is-warning is-light">
+                        <button class="delete"></button>
+                        For now the API Tester, in the request field, the data needs to be written in JSON format (with
+                        double
+                        quotes and without trailing commas).
+                        Test cases can be founded in README.md -> <a href="https://github.com/igga95/notes-api"
+                            target="_blank">Github</a>
+                    </div>
+                </div>
             </div>
             <div class="tabs is-centered">
                 <ul>
