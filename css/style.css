@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&family=Space+Mono:wght@400;700&family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    min-width: 250px;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+}
+
+#main {
+    background: hsl(0, 0%, 21%);
+}
+
+#home-section .title {
+    margin: 25px auto;
+}
+
+#home-section p {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#home-section .social-media-icons {
+    margin: 25px auto;
+}
+
+.navbar {
+    border-bottom: 0.5px solid hsl(0, 0%, 96%);
+}
+
+.navbar-menu {
+    background: hsl(0, 0%, 21%);
+    /* border-top: 0.5px solid hsl(0, 0%, 96%); */
+    /* border-bottom: 0.5px solid hsl(0, 0%, 96%); */
+}
+.navbar-item {
+    color: hsl(0, 0%, 96%);
+}
+
+.section-title {
+    margin: 30px auto;
+}
+
+.section-title .underline-title {
+    /* padding-bottom: 0.3rem; */
+    border-bottom: 1.5px solid hsl(0, 0%, 96%);
+}
+
+.section-title .title {
+    text-align: center;
+}
+
+.card .card-content .content {
+    height: 130px;
+}
+
+.card .card-image img {
+    object-fit: cover;
+}
+
+#api-tester-section .endpoints {
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid hsl(0, 0%, 96%);
+    margin-bottom: 1.5rem;
+}
+
+/* #api-tester-section .endpoints :nth-child(1) {
+    margin-bottom: 0.7rem;
+} */
+
+/* #api-tester-section .tabs ul {
+    width: 40%;
+} */
