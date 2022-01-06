@@ -9,8 +9,11 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
     <link rel="stylesheet" href="./css/bulma-styles.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./utils/const.js"></script>
     <script defer src="./scripts/hamburguer.js"></script>
     <script defer src="./scripts/scroll.js"></script>
+    <script defer src="./scripts/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +33,7 @@
                 <a id="home" class="navbar-item" href="#home-section">Home</a>
                 <a id="skills" class="navbar-item" href="#proyects-section">Skills</a>
                 <a id="proyects" class="navbar-item" href="#proyects-section">Proyects</a>
-                <a id="api-tester" class="navbar-item is-hidden-mobile" href="#api-tester-section">Testing APIs</a>
+                <a id="api-tester" class="navbar-item is-hidden-mobile" href="#api-tester-section">Test APIs</a>
             </div>
         </div>
     </nav>
@@ -84,7 +87,7 @@
                             </div>
                             <div class="card-link">
                             </div>
-                            <a class="button is-dark" href="#">Test API</a>
+                            <button id="test-notes-api" class="button is-dark">Test API</button>
                         </div>
                     </div>
                 </div>
@@ -140,7 +143,7 @@
             </div>
             <div class="tabs is-centered">
                 <ul>
-                    <li class="is-active has-text-light"><a class="has-text-light">Notes-api</a></li>
+                    <li class="is-active has-text-light"><a class="has-text-light">Notes-API</a></li>
                     <li><a class="has-text-light">api-2</a></li>
                 </ul>
             </div>
@@ -154,11 +157,15 @@
                 </div>
             </div>
             <div class="buttons is-centered">
-                <button class="button is-success">GET all resources</button>
-                <button class="button is-info">GET one resource</button>
-                <button class="button is-info">POST one resource</button>
-                <button class="button is-info">PUT one resource</button>
-                <button class="button is-info">DELETE one resource</button>
+                <button id="notes" class="button is-success">Notes</button>
+                <button id="users" class="button is-info">Users</button>
+            </div>
+            <div class="buttons is-centered">
+                <button id="get-all" class="button is-info">GET all resources</button>
+                <button id="get-one" class="button is-info">GET one resource</button>
+                <button id="post" class="button is-info">POST one resource</button>
+                <button id="put" class="button is-info">PUT one resource</button>
+                <button id="delete" class="button is-info">DELETE one resource</button>
             </div>
             <div class="columns is-centered">
                 <div class="field has-addons column is-5">
@@ -168,18 +175,30 @@
                         </a>
                     </p>
                     <p class="control is-expanded">
-                        <input class="input" type="text">
+                        <input id="uri" class="input" type="text">
                     </p>
                 </div>
                 <div class="field has-addons column is-5">
                     <p class="control is-dark">
                         <a class="button is-static">
-                            ID
+                            ID:
                         </a>
                     </p>
                     <p class="control is-expanded">
-                        <input class="input" type="text">
+                        <input id="resource-id" class="input" type="text">
                     </p>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-5">
+                    <div class="control">
+                        <textarea id="api-request" class="textarea has-fixed-size" rows="20"></textarea>
+                    </div>
+                </div>
+                <div class="column is-5">
+                    <div class="control">
+                        <textarea id="api-response" class="textarea has-fixed-size" rows="20" readonly></textarea>
+                    </div>
                 </div>
             </div>
         </section>

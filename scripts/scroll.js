@@ -43,13 +43,12 @@ apiLink.addEventListener("click", () => {
     apiLink.classList.add("active");
 });
 
-// testNotesApiBtn.addEventListener("click", () => {
-//     apiLink.click();
-//     notesBtn.click();
-// });
+testNotesApiBtn.addEventListener("click", () => {
+    apiLink.click();
+    notesBtn.click();
+});
 
 const links = document.querySelectorAll(".navbar .navbar-item");
-console.log(links);
 
 for (const link of links) {
     link.addEventListener("click", clickHandler);
