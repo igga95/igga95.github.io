@@ -43,6 +43,9 @@ notesBtn.addEventListener("click", async (e) => {
     notesBtn.classList.remove("is-info");
     usersBtn.classList.add("is-info");
     usersBtn.classList.remove("is-success");
+    getOneBtn.removeAttribute("disabled", "");
+    putBtn.removeAttribute("disabled", "");
+    delBtn.removeAttribute("disabled", "");
     cleanTextarea(apiRes);
 });
 
@@ -54,6 +57,9 @@ usersBtn.addEventListener("click", async (e) => {
     usersBtn.classList.remove("is-info");
     notesBtn.classList.add("is-info");
     notesBtn.classList.remove("is-success");
+    getOneBtn.setAttribute("disabled", "");
+    putBtn.setAttribute("disabled", "");
+    delBtn.setAttribute("disabled", "");
     cleanTextarea(apiRes);
 });
 

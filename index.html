@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
     <link rel="stylesheet" href="./css/bulma-styles.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bulma-popover/css/bulma-popover.css">
     <script defer src="./utils/const.js"></script>
     <script defer src="./scripts/notification.js"></script>
     <script defer src="./scripts/hamburguer.js"></script>
@@ -34,7 +35,16 @@
                 <a id="home" class="navbar-item" href="#home-section">Home</a>
                 <a id="skills" class="navbar-item" href="#proyects-section">Skills</a>
                 <a id="proyects" class="navbar-item" href="#proyects-section">Proyects</a>
-                <a id="api-tester" class="navbar-item is-hidden-mobile" href="#api-tester-section">Test APIs</a>
+                <div class="level-item">
+                    <div class="popover is-popover-bottom">
+                        <a id="api-tester" class="navbar-item is-hidden-mobile popover-trigger"
+                            href="#api-tester-section">Test APIs</a>
+                        <div class="popover-content">
+                            <p>Not available</p>
+                            <p>in mobile.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -149,7 +159,7 @@
                         For now the API Tester, in the request field, the data needs to be written in JSON format (with
                         double
                         quotes and without trailing commas).
-                        Test cases can be founded in README.md -> <a href="https://github.com/igga95/notes-api"
+                        Test cases can be founded in README.md -> <a href="https://github.com/igga95/personal-portfolio"
                             target="_blank">Github</a>
                     </div>
                 </div>
