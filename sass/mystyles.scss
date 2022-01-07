@@ -1,2 +1,66 @@
 @charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
+
+$mobile-breakpoint: 769px;
+$tablet-breakpoint: 1025px;
+
+.section.is-large {
+    @include until($mobile-breakpoint) {
+        padding-top: 8rem;
+        padding-bottom: 0;
+    }
+    @include until($tablet-breakpoint) {
+        padding-top: 8rem;
+        padding-bottom: 0;
+    }
+
+    // @include from($breakpoint) {
+    //     background: orange;
+    // }
+}
+
+#home-section .title {
+    @include until($mobile-breakpoint) {
+        margin: 12.5px auto;
+    }
+    @include from($mobile-breakpoint) {
+        margin: 25px auto;
+    }
+}
+
+#home-section p {
+    @include until($mobile-breakpoint) {
+        margin: 8px auto;
+        width: 70%;
+    }
+    @include from($mobile-breakpoint) {
+        margin: 5px auto;
+        width: 70%;
+    }
+}
+
+#home-section .social-media-icons {
+    @include until($mobile-breakpoint) {
+        margin: 12.5px auto;
+    }
+    @include from($mobile-breakpoint) {
+        margin: 25px auto;
+    }
+}
+
+.icon {
+    @include until($mobile-breakpoint) {
+        height: 2rem;
+        width: 2rem;
+    }
+    @include from($mobile-breakpoint) {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+.column.is-9-mobile {
+    @include until($mobile-breakpoint) {
+        margin: auto;
+    }
+}

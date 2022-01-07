@@ -7845,3 +7845,53 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+@media screen and (max-width: 768px) {
+  .section.is-large {
+    padding-top: 8rem;
+    padding-bottom: 0; } }
+
+@media screen and (max-width: 1024px) {
+  .section.is-large {
+    padding-top: 8rem;
+    padding-bottom: 0; } }
+
+@media screen and (max-width: 768px) {
+  #home-section .title {
+    margin: 12.5px auto; } }
+
+@media screen and (min-width: 769px) {
+  #home-section .title {
+    margin: 25px auto; } }
+
+@media screen and (max-width: 768px) {
+  #home-section p {
+    margin: 8px auto;
+    width: 70%; } }
+
+@media screen and (min-width: 769px) {
+  #home-section p {
+    margin: 5px auto;
+    width: 70%; } }
+
+@media screen and (max-width: 768px) {
+  #home-section .social-media-icons {
+    margin: 12.5px auto; } }
+
+@media screen and (min-width: 769px) {
+  #home-section .social-media-icons {
+    margin: 25px auto; } }
+
+@media screen and (max-width: 768px) {
+  .icon {
+    height: 2rem;
+    width: 2rem; } }
+
+@media screen and (min-width: 769px) {
+  .icon {
+    height: 3rem;
+    width: 3rem; } }
+
+@media screen and (max-width: 768px) {
+  .column.is-9-mobile {
+    margin: auto; } }

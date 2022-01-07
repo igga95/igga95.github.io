@@ -19,18 +19,18 @@ body {
     background: hsl(0, 0%, 21%);
 }
 
-#home-section .title {
+/* #home-section .title {
     margin: 25px auto;
-}
+} */
 
-#home-section p {
+/* #home-section p {
     margin: 0 auto;
     width: 70%;
-}
+} */
 
-#home-section .social-media-icons {
+/* #home-section .social-media-icons {
     margin: 25px auto;
-}
+} */
 
 .navbar {
     border-bottom: 0.5px solid hsl(0, 0%, 96%);
@@ -72,10 +72,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* #api-tester-section .endpoints :nth-child(1) {
-    margin-bottom: 0.7rem;
-} */
-
-/* #api-tester-section .tabs ul {
-    width: 40%;
-} */
+.text-field-container .column {
+    padding: 0.125rem 0.4rem;
+}
