@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/bulma-popover/css/bulma-popover.css">
     <script defer src="./utils/const.js"></script>
-    <script defer src="./scripts/notification.js"></script>
-    <script defer src="./scripts/hamburguer.js"></script>
+    <script defer src="./scripts/utilities.js"></script>
     <script defer src="./scripts/scroll.js"></script>
     <script defer src="./scripts/api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -35,8 +34,10 @@
                 <a id="home" class="navbar-item" href="#home-section">Home</a>
                 <a id="skills" class="navbar-item" href="#proyects-section">Skills</a>
                 <a id="proyects" class="navbar-item" href="#proyects-section">Proyects</a>
-                <div class="level-item">
-                    <div class="popover is-popover-bottom">
+                <a id="api-tester" class="navbar-item is-hidden-mobile popover-trigger" href="#api-tester-section">Test
+                    APIs</a>
+                <!-- <div class="level-item">
+                    <div class=" is-popover-bottom">
                         <a id="api-tester" class="navbar-item is-hidden-mobile popover-trigger"
                             href="#api-tester-section">Test APIs</a>
                         <div class="popover-content">
@@ -44,28 +45,30 @@
                             <p>in mobile.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
     <main id="main">
         <section id="home-section" class="section container is-large">
             <div class="content">
-                <p class="title is-size-4-mobile is-size-2 has-text-light"><span>Hi.</span> My name is</p>
-                <p class="title is-size-3-mobile is-size-1"><strong class="has-text-light">Gabriel Iglesias</strong></p>
-                <p class="title is-size-4-mobile is-size-2 has-text-light">I'm a Jr. Backend Developer</p>
-                <p class="is-size-7-mobile is-size-5 has-text-light">
+                <p class="title is-size-5-mobile is-size-2 has-text-light"><span>Hi.</span> My name is</p>
+                <p class="title is-size-4-mobile is-size-1"><strong class="has-text-light">Gabriel Iglesias</strong></p>
+                <p class="title is-size-5-mobile is-size-2 has-text-light">I'm a Jr. Backend Developer</p>
+                <p class="is-size-6-mobile is-size-5 has-text-light">
                     I'm a Electronic Engineering student and I enjoy programming.
                 </p>
-                <p class="is-size-7-mobile is-size-5 has-text-light">
+                <p class="is-size-6-mobile is-size-5 has-text-light">
                     I'm looking for my first job as Software Developer.
                 </p>
                 <p class="social-media-icons">
-                    <span class="icon is-medium-mobile is-large">
+                    <!-- <span class="icon is-large"> -->
+                    <span class="icon">
                         <a href="https://github.com/igga95?tab=repositories" target="_blank"><img
                                 src="./public/github-light-48.png"></img></a>
                     </span>
-                    <span class="icon is-medium-mobile is-large">
+                    <!-- <span class="icon is-large"> -->
+                    <span class="icon">
                         <a href="https://www.linkedin.com/in/gabriel-iglesias-1ba083204/" target="_blank"><img
                                 src="./public/linkedin-light-48.png"></img></a>
                     </span>
@@ -77,7 +80,7 @@
                 <h1 class="title is-size-4 has-text-light"><span class="underline-title">Proyects</span></h1>
             </div>
             <div class="columns is-centered is-vcentered">
-                <div class="column is-4-tablet is-3-desktop is-3-fullhd">
+                <div class="column is-9-mobile is-4-tablet is-3-desktop is-3-fullhd">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -102,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-4-tablet is-3-desktop is-3-fullhd">
+                <div class="column is-9-mobile is-4-tablet is-3-desktop is-3-fullhd">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -126,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-4-tablet is-3-desktop is-3-fullhd">
+                <div class="column is-9-mobile is-4-tablet is-3-desktop is-3-fullhd">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -152,13 +155,20 @@
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span class="underline-title">APIs Tester</span></h1>
             </div>
-            <div id="api-tester-notification" class="columns is-centered">
-                <div class="column is-8">
+            <div id="api-tester-notification-1" class="columns is-centered">
+                <div class="column is-9">
+                    <div class="notification is-5 is-danger">
+                        <button class="delete"></button>
+                        For now the API Tester it is not available on mobile devices.
+                    </div>
+                </div>
+            </div>
+            <div id="api-tester-notification-2" class="columns is-centered">
+                <div class="column is-9">
                     <div class="notification is-5 is-warning is-light">
                         <button class="delete"></button>
-                        For now the API Tester, in the request field, the data needs to be written in JSON format (with
-                        double
-                        quotes and without trailing commas).
+                        In the request field (left), the data needs to be written in JSON format (with
+                        keys between double quotes and without trailing commas).
                         Test cases can be founded in README.md -> <a href="https://github.com/igga95/personal-portfolio"
                             target="_blank">Github</a>
                     </div>
@@ -190,37 +200,39 @@
                 <button id="put" class="button is-info">PUT one resource</button>
                 <button id="delete" class="button is-info">DELETE one resource</button>
             </div>
-            <div class="columns is-centered">
-                <div class="field has-addons column is-5">
-                    <p class="control is-dark">
-                        <a class="button is-static">
-                            URI:
-                        </a>
-                    </p>
-                    <p class="control is-expanded">
-                        <input id="uri" class="input" type="text">
-                    </p>
-                </div>
-                <div class="field has-addons column is-5">
-                    <p class="control is-dark">
-                        <a class="button is-static">
-                            ID:
-                        </a>
-                    </p>
-                    <p class="control is-expanded">
-                        <input id="resource-id" class="input" type="text">
-                    </p>
-                </div>
-            </div>
-            <div class="columns is-centered">
-                <div class="column is-5">
-                    <div class="control">
-                        <textarea id="api-request" class="textarea has-fixed-size" rows="20"></textarea>
+            <div class="text-field-container">
+                <div class="columns is-centered">
+                    <div class="field has-addons column is-5">
+                        <p class="control is-dark">
+                            <a class="button is-static">
+                                URI:
+                            </a>
+                        </p>
+                        <p class="control is-expanded">
+                            <input id="uri" class="input" type="text">
+                        </p>
+                    </div>
+                    <div class="field has-addons column is-5">
+                        <p class="control is-dark">
+                            <a class="button is-static">
+                                ID:
+                            </a>
+                        </p>
+                        <p class="control is-expanded">
+                            <input id="resource-id" class="input" type="text">
+                        </p>
                     </div>
                 </div>
-                <div class="column is-5">
-                    <div class="control">
-                        <textarea id="api-response" class="textarea has-fixed-size" rows="20" readonly></textarea>
+                <div class="columns is-centered">
+                    <div class="column is-5">
+                        <div class="control">
+                            <textarea id="api-request" class="textarea has-fixed-size" rows="20"></textarea>
+                        </div>
+                    </div>
+                    <div class="column is-5">
+                        <div class="control">
+                            <textarea id="api-response" class="textarea has-fixed-size" rows="20" readonly></textarea>
+                        </div>
                     </div>
                 </div>
             </div>
