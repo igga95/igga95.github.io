@@ -31,12 +31,22 @@ document.addEventListener("DOMContentLoaded", () => {
     (document.querySelectorAll(".notification .delete") || []).forEach(($delete) => {
         const $notification = $delete.parentNode;
 
-        const div = document.querySelector("#api-tester-notification");
+        const container = $delete.parentNode.parentNode.parentNode;
         $delete.addEventListener("click", () => {
             $notification.parentNode.removeChild($notification);
-            div.parentNode.removeChild(div);
+            container.remove();
         });
     });
+});
+
+/*
+ * Script to set is-active in dropdown menu to deploy it
+ */
+
+const dropdown = document.querySelector(".dropdown");
+dropdown.addEventListener("click", function (event) {
+    event.stopPropagation();
+    dropdown.classList.toggle("is-active");
 });
 
 /*

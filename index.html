@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
     <link rel="stylesheet" href="./css/bulma-styles.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/bulma-popover/css/bulma-popover.css">
@@ -62,12 +63,10 @@
                     I'm looking for my first job as Software Developer.
                 </p>
                 <p class="social-media-icons">
-                    <!-- <span class="icon is-large"> -->
                     <span class="icon">
                         <a href="https://github.com/igga95?tab=repositories" target="_blank"><img
                                 src="./public/github-light-48.png"></img></a>
                     </span>
-                    <!-- <span class="icon is-large"> -->
                     <span class="icon">
                         <a href="https://www.linkedin.com/in/gabriel-iglesias-1ba083204/" target="_blank"><img
                                 src="./public/linkedin-light-48.png"></img></a>
@@ -155,7 +154,7 @@
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span class="underline-title">APIs Tester</span></h1>
             </div>
-            <div id="api-tester-notification-1" class="columns is-centered">
+            <div id="api-tester-notification-1" class="columns is-centered api-tester-notification">
                 <div class="column is-9">
                     <div class="notification is-5 is-danger">
                         <button class="delete"></button>
@@ -163,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div id="api-tester-notification-2" class="columns is-centered">
+            <div id="api-tester-notification-2" class="columns is-centered api-tester-notification">
                 <div class="column is-9">
                     <div class="notification is-5 is-warning is-light">
                         <button class="delete"></button>
@@ -176,8 +175,8 @@
             </div>
             <div class="tabs is-centered">
                 <ul>
-                    <li class="is-active has-text-light"><a class="has-text-light">Notes-API</a></li>
-                    <li><a class="has-text-light">api-2</a></li>
+                    <li id="api-no-users" class="is-active"><a class="has-text-light">Notes-without-users</a></li>
+                    <li id="api-users"><a class="has-text-light">Notes-with-users</a></li>
                 </ul>
             </div>
             <div class="endpoints">
@@ -192,6 +191,27 @@
             <div class="buttons is-centered">
                 <button id="notes" class="button is-success">Notes</button>
                 <button id="users" class="button is-info">Users</button>
+                <div id="container-api-dropdown-users" class="dropdown is-hidden">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                            <span id="users-dropdown-leyend">Select user</span>
+                            <span class="icon-dropdown">
+                                <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                <img src="./public/down-arrow-svgrepo-com.svg" aria-hidden="true"></>
+                            </span>
+                        </button>
+                    </div>
+                    <div id="users-dropdown-menu" class="dropdown-menu" role="menu">
+                        <div id="users-dropdown-content" class="dropdown-content">
+                            <!-- <a class="dropdown-item">
+                                Overview
+                            </a>
+                            <a class="dropdown-item">
+                                Modifiers
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="buttons is-centered">
                 <button id="get-all" class="button is-info">GET all resources</button>
