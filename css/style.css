@@ -19,27 +19,12 @@ body {
     background: hsl(0, 0%, 21%);
 }
 
-/* #home-section .title {
-    margin: 25px auto;
-} */
-
-/* #home-section p {
-    margin: 0 auto;
-    width: 70%;
-} */
-
-/* #home-section .social-media-icons {
-    margin: 25px auto;
-} */
-
 .navbar {
     border-bottom: 0.5px solid hsl(0, 0%, 96%);
 }
 
 .navbar-menu {
     background: hsl(0, 0%, 21%);
-    /* border-top: 0.5px solid hsl(0, 0%, 96%); */
-    /* border-bottom: 0.5px solid hsl(0, 0%, 96%); */
 }
 .navbar-item {
     color: hsl(0, 0%, 96%);
@@ -50,7 +35,6 @@ body {
 }
 
 .section-title .underline-title {
-    /* padding-bottom: 0.3rem; */
     border-bottom: 1.5px solid hsl(0, 0%, 96%);
 }
 
@@ -74,4 +58,9 @@ body {
 
 .text-field-container .column {
     padding: 0.125rem 0.4rem;
+}
+
+.icon-dropdown {
+    height: 1rem;
+    width: 1rem;
 }
