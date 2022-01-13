@@ -164,19 +164,28 @@
             </div>
             <div id="api-tester-notification-2" class="columns is-centered api-tester-notification">
                 <div class="column is-9">
-                    <div class="notification is-5 is-warning is-light">
+                    <div class="notification is-5 is-warning">
                         <button class="delete"></button>
                         In the request field (left), the data needs to be written in JSON format (with
                         keys between double quotes and without trailing commas).
-                        Test cases can be founded in README.md -> <a href="https://github.com/igga95/personal-portfolio"
+                        Test cases can be found in README.md -> <a href="https://github.com/igga95/personal-portfolio"
                             target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div id="api-tester-notification-2" class="columns is-centered api-tester-notification">
+                <div class="column is-9">
+                    <div class="notification is-5 is-info">
+                        <button class="delete"></button>
+                        For a newly created user to be used in this API Tester, his username and password must be the
+                        same.
                     </div>
                 </div>
             </div>
             <div class="tabs is-centered">
                 <ul>
-                    <li id="api-no-users" class="is-active"><a class="has-text-light">Notes-without-users</a></li>
-                    <li id="api-users"><a class="has-text-light">Notes-with-users</a></li>
+                    <!-- <li id="api-no-users" class="is-active"><a class="has-text-light">Notes-without-users</a></li> -->
+                    <li id="api-notes" class="is-active"><a class="has-text-light">Notes</a></li>
                 </ul>
             </div>
             <div class="endpoints">
@@ -191,7 +200,8 @@
             <div class="buttons is-centered">
                 <button id="notes" class="button is-success">Notes</button>
                 <button id="users" class="button is-info">Users</button>
-                <div id="container-api-dropdown-users" class="dropdown is-hidden">
+                <button id="reload-users" class="button is-info">Reload users</button>
+                <div id="container-api-dropdown-users" class="dropdown">
                     <div class="dropdown-trigger">
                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
                             <span id="users-dropdown-leyend">Select user</span>

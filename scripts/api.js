@@ -1,8 +1,8 @@
-const apiNoUsersOpt = document.querySelector("#api-no-users");
-const apiUsersOpt = document.querySelector("#api-users");
+const apiNotes = document.querySelector("#api-notes");
 
 const notesBtn = document.querySelector("#notes");
 const usersBtn = document.querySelector("#users");
+const reloadUsers = document.querySelector("#reload-users");
 const usersDropdownLeyend = document.querySelector("#users-dropdown-leyend");
 const usersDropdownContainer = document.querySelector("#container-api-dropdown-users");
 const usersDropdownContent = document.querySelector("#users-dropdown-content");
@@ -69,38 +69,25 @@ const idCheck = () => {
 
 const createEventsUsers = () => {
     const aElements = document.querySelectorAll("#users-dropdown-content .dropdown-item");
-    console.log(aElements);
-
     aElements.forEach((el) => {
         el.addEventListener("click", async () => {
             usersDropdownLeyend.innerText = el.innerText;
-            console.log(el.innerText);
             const { token } = await sendReq({ method: "post", uri: `${BASE_URI}/login`, data: { username: el.innerText, password: el.innerText } });
-            console.log(token);
             HEADER.Authorization = `Bearer ${token}`;
         });
     });
 };
 
-addEventListener("DOMContentLoaded", () => {
-    uriField.value = NOTES_URI;
-    apiReqTextarea.value = JSON.stringify(EXAMPLE_NOTE_REQUEST, undefined, 4);
-});
+const removeUsers = () => {
+    const aElements = document.querySelectorAll("#users-dropdown-content .dropdown-item");
+    aElements.forEach((el) => {
+        el.remove();
+    });
+};
 
-apiNoUsersOpt.addEventListener("click", (e) => {
-    apiNoUsersOpt.classList.add("is-active");
-    apiUsersOpt.classList.remove("is-active");
-    usersDropdownContainer.classList.add("is-hidden");
-    HEADER.Authorization = "";
-});
-
-apiUsersOpt.addEventListener("click", async (e) => {
-    apiUsersOpt.classList.add("is-active");
-    apiNoUsersOpt.classList.remove("is-active");
-    usersDropdownContainer.classList.remove("is-hidden");
+const createUsersDropdown = async () => {
+    removeUsers();
     const loginData = await sendReq({ method: "get", uri: `${BASE_URI}/users` });
-    cleanTextarea(apiResTextarea);
-    printTextarea(apiResTextarea, loginData);
     loginData.forEach((user) => {
         const aElement = document.createElement("a");
         aElement.setAttribute("id", user.username);
@@ -109,12 +96,23 @@ apiUsersOpt.addEventListener("click", async (e) => {
         usersDropdownContent.appendChild(aElement);
     });
     createEventsUsers();
+};
+
+addEventListener("DOMContentLoaded", () => {
+    uriField.value = NOTES_URI;
+    apiReqTextarea.value = JSON.stringify(EXAMPLE_NOTE_POST_REQUEST, undefined, 4);
+    createUsersDropdown();
+});
+
+reloadUsers.addEventListener("click", async (e) => {
+    e.preventDefault();
+    createUsersDropdown();
 });
 
 notesBtn.addEventListener("click", async (e) => {
     e.preventDefault();
     uriField.value = NOTES_URI;
-    apiReqTextarea.value = JSON.stringify(EXAMPLE_NOTE_REQUEST, undefined, 4);
+    apiReqTextarea.value = JSON.stringify(EXAMPLE_NOTE_POST_REQUEST, undefined, 4);
     notesBtn.classList.add("is-success");
     notesBtn.classList.remove("is-info");
     usersBtn.classList.add("is-info");
@@ -128,7 +126,7 @@ notesBtn.addEventListener("click", async (e) => {
 usersBtn.addEventListener("click", async (e) => {
     e.preventDefault();
     uriField.value = USERS_URI;
-    apiReqTextarea.value = JSON.stringify(EXAMPLE_USER_REQUEST, undefined, 4);
+    apiReqTextarea.value = JSON.stringify(EXAMPLE_USER_POST_REQUEST, undefined, 4);
     usersBtn.classList.add("is-success");
     usersBtn.classList.remove("is-info");
     notesBtn.classList.add("is-info");

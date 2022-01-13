@@ -1,12 +1,11 @@
-const EXAMPLE_NOTE_REQUEST = {
+const EXAMPLE_NOTE_POST_REQUEST = {
     content: "new note",
     important: true,
-    userId: "61d3875c555ed6bdfaa4f978",
 };
-const EXAMPLE_USER_REQUEST = {
+const EXAMPLE_USER_POST_REQUEST = {
     username: "username",
     name: "Username",
-    password: "generic_password",
+    password: "username",
 };
 
 const BASE_URI = "http://localhost:3001/api";
