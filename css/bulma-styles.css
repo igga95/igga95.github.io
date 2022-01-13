@@ -7895,3 +7895,39 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (max-width: 768px) {
   .column.is-9-mobile {
     margin: auto; } }
+
+.bulma-arrow-mixin {
+  border: 3px solid black;
+  border-radius: 2px;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  display: block;
+  height: 0.625em;
+  margin-top: -0.4375em;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  width: 0.625em; }
+
+@media screen and (max-width: 768px) {
+  .image.is-96x96 {
+    width: 64px;
+    height: 64px;
+    font-size: 0.7rem; } }
+
+.image.is-96x96 img {
+  background: white; }
+  @media screen and (max-width: 768px) {
+    .image.is-96x96 img {
+      width: 48px;
+      height: 48px; } }
+  @media screen and (min-width: 769px) {
+    .image.is-96x96 img {
+      height: 64px;
+      width: 64px; } }
+
+.card-content .content {
+  font-size: 0.9rem; }

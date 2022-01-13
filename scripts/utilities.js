@@ -48,25 +48,3 @@ dropdown.addEventListener("click", function (event) {
     event.stopPropagation();
     dropdown.classList.toggle("is-active");
 });
-
-/*
- * Script to set icons to medium or large
- */
-
-// let mql = window.matchMedia("(max-width: 768px)");
-// const listIcons = document.querySelectorAll(".icon");
-
-// function screenTest(e) {
-//     console.log(e);
-//     if (e.matches) {
-//         listIcons.forEach((el) => el.classList.add("is-medium"));
-//         listIcons.forEach((el) => el.classList.remove("is-large"));
-//     } else {
-//         listIcons.forEach((el) => el.classList.add("is-large"));
-//         listIcons.forEach((el) => el.classList.remove("is-medium"));
-//         console.log("not mobile");
-//     }
-// }
-
-// if (mql.matches) screenTest();
-// mql.addEventListener("change", screenTest);

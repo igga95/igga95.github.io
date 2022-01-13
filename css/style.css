@@ -64,3 +64,25 @@ body {
     height: 1rem;
     width: 1rem;
 }
+
+#skills-section figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #skills-section figure img {
+    height: 64px;
+    width: 64px;
+    background: white;
+} */
+
+.skills-figure-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figcaption {
+    text-align: center;
+}

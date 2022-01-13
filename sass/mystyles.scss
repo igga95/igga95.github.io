@@ -60,3 +60,31 @@ $tablet-breakpoint: 1025px;
         margin: auto;
     }
 }
+
+.bulma-arrow-mixin {
+    @include arrow(black);
+}
+
+.image.is-96x96 {
+    @include until($mobile-breakpoint) {
+        width: 64px;
+        height: 64px;
+        font-size: 0.7rem;
+    }
+}
+
+.image.is-96x96 img {
+    background: white;
+    @include until($mobile-breakpoint) {
+        width: 48px;
+        height: 48px;
+    }
+    @include from($mobile-breakpoint) {
+        height: 64px;
+        width: 64px;
+    }
+}
+
+.card-content .content {
+    font-size: 0.9rem;
+}

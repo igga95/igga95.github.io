@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
     <link rel="stylesheet" href="./css/bulma-styles.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/bulma-popover/css/bulma-popover.css">
@@ -33,25 +31,15 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
                 <a id="home" class="navbar-item" href="#home-section">Home</a>
-                <a id="skills" class="navbar-item" href="#proyects-section">Skills</a>
+                <a id="skills" class="navbar-item" href="#skills-section">Skills</a>
                 <a id="proyects" class="navbar-item" href="#proyects-section">Proyects</a>
                 <a id="api-tester" class="navbar-item is-hidden-mobile popover-trigger" href="#api-tester-section">Test
                     APIs</a>
-                <!-- <div class="level-item">
-                    <div class=" is-popover-bottom">
-                        <a id="api-tester" class="navbar-item is-hidden-mobile popover-trigger"
-                            href="#api-tester-section">Test APIs</a>
-                        <div class="popover-content">
-                            <p>Not available</p>
-                            <p>in mobile.</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
     <main id="main">
-        <section id="home-section" class="section container is-large">
+        <section id="home-section" class="section  is-large">
             <div class="content">
                 <p class="title is-size-5-mobile is-size-2 has-text-light"><span>Hi.</span> My name is</p>
                 <p class="title is-size-4-mobile is-size-1"><strong class="has-text-light">Gabriel Iglesias</strong></p>
@@ -74,6 +62,77 @@
                 </p>
             </div>
         </section>
+        <section id="skills-section" class="section ">
+            <div class="section-title">
+                <h1 class="title is-size-4 has-text-light"><span class="underline-title">Skills</span></h1>
+            </div>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-6">
+                    <h2 class="subtitle is-size-5 has-text-light">What I use</h2>
+                </div>
+            </div>
+            <div class="columns is-centered is-vcentered">
+                <div class="skills-figure-container column is-8-tablet is-6-desktop is-4">
+                    <figure class="image is-64x64-mobile is-96x96">
+                        <img src="./public/logos/html.svg">
+                        <figcaption class="has-text-light">HTML5</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/css.svg">
+                        <figcaption class="has-text-light">CSS3</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/bootstrap.svg">
+                        <figcaption class="has-text-light">Bootstrap</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/bulma.svg">
+                        <figcaption class="has-text-light">Bulma.io</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="columns is-centered is-vcentered">
+                <div class="skills-figure-container column is-8-tablet is-6-desktop is-4">
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/node.svg">
+                        <figcaption class="has-text-light">NodeJS</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/express.svg">
+                        <figcaption class="has-text-light">ExpressJS</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/mongodb.svg">
+                        <figcaption class="has-text-light">MongoDB</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/mongoose.svg">
+                        <figcaption class="has-text-light">Mongoose</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-6">
+                    <h2 class="subtitle is-size-5 has-text-light">What I would like to learn</h2>
+                </div>
+            </div>
+            <div class="columns is-centered is-vcentered">
+                <div class="skills-figure-container column is-8-tablet is-6-desktop is-4">
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/postgresql.svg">
+                        <figcaption class="has-text-light">PostgreSQL</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/rust.svg">
+                        <figcaption class="has-text-light">Rust</figcaption>
+                    </figure>
+                    <figure class="image is-96x96">
+                        <img src="./public/logos/docker.svg">
+                        <figcaption class="has-text-light">Docker</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
         <section id="proyects-section" class="section">
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span class="underline-title">Proyects</span></h1>
@@ -93,8 +152,9 @@
                                 </div>
                             </div>
                             <div class="content">
-                                Code-along RESTful API made by <a href="https://twitter.com/midudev"
-                                    target="_blank">@midudev</a>.
+                                Modified Code-along RESTful API made in the 'Free Fullstack Bootcamp' by <a
+                                    href="https://www.youtube.com/watch?v=wTpuKOhGfJE&list=PLV8x_i1fqBw0Kn_fBIZTa3wS_VZAqddX7&index=1&ab_channel=midudev"
+                                    target="_blank">midudev</a>.
                                 <br>
                                 <a href="https://github.com/igga95/notes-api" target="_blank">View Code</a>
                             </div>
@@ -118,7 +178,7 @@
                                 </div>
                             </div>
                             <div class="content">
-                                Code-along final proyect of 'The web development bootcamp' by <a
+                                Code-along final proyect of 'The Web Development Bootcamp' by <a
                                     href="https://www.youtube.com/c/ColtSteeleCode/featured" target="_blank">Colt
                                     Steele</a>.
                                 <br>
@@ -132,19 +192,19 @@
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="./public/not-available.png" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-size-5">Twitter Clone</p>
+                                    <p class="title is-size-5">Twitter Like App</p>
                                 </div>
                             </div>
                             <div class="content">
-                                Fullstack Twitter Clone with few functionalities.
+                                App based on Twitter with few functionalities.
                             </div>
-                            <a class="button is-dark" href="#">Go to site</a>
+                            <a class="button is-dark" href="#" disabled>Go to site</a>
                         </div>
                     </div>
                 </div>
@@ -194,6 +254,7 @@
                         <p class="is-size-5 has-text-light">Available endpoints</p>
                         <p class="is-size-6 has-text-light">Notes -> http://localhost:3001/api/notes</p>
                         <p class="is-size-6 has-text-light">Users -> http://localhost:3001/api/users</p>
+                        <p class="is-size-6 has-text-light">Login -> http://localhost:3001/api/login</p>
                     </div>
                 </div>
             </div>
@@ -206,19 +267,13 @@
                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
                             <span id="users-dropdown-leyend">Select user</span>
                             <span class="icon-dropdown">
-                                <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
-                                <img src="./public/down-arrow-svgrepo-com.svg" aria-hidden="true"></>
+                                <i class="bulma-arrow-mixin" aria-hidden="true"></i>
+                                <!-- <img src="./public/down-arrow-svgrepo-com.svg" aria-hidden="true"></> -->
                             </span>
                         </button>
                     </div>
                     <div id="users-dropdown-menu" class="dropdown-menu" role="menu">
                         <div id="users-dropdown-content" class="dropdown-content">
-                            <!-- <a class="dropdown-item">
-                                Overview
-                            </a>
-                            <a class="dropdown-item">
-                                Modifiers
-                            </a> -->
                         </div>
                     </div>
                 </div>
