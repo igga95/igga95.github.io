@@ -22,7 +22,7 @@ URI: http://localhost:3001/api/notes/id
 
 URI: http://localhost:3001/api/notes
 
-<img src="./public/examples/post_note.png" alt="post note request example"/>
+<img src="./public/examples/post_note.png" style="width:430px" alt="post note request example"/>
 
 #### PUT:
 
