@@ -1,8 +1,10 @@
 # Personal portfolio - Iglesias Gabriel - Jr. Backend Developer
 
-## In the request field (left), the data needs to be written in JSON format (with keys between double quotes and without trailing commas).
+## API Tester:
 
-## Using the API tester in the notes API, you must be logged in, please select one user in the dropdown menu.
+### In the request field (left), the data needs to be written in JSON format (with keys between double quotes and without trailing commas).
+
+### You must be logged in, please select one user in the dropdown menu.
 
 ## Notes:
 
@@ -20,13 +22,13 @@ URI: http://localhost:3001/api/notes/id
 
 URI: http://localhost:3001/api/notes
 
-<img src="./public/examples/post-note.png" alt="post note request example"/>
+<img src="./public/examples/post_note.svg" alt="post note request example"/>
 
 #### PUT:
 
 URI: http://localhost:3001/api/notes/id
 
-<img src="./public/examples/put-note.png" alt="put note request example"/>
+<img src="./public/examples/put_note.svg" alt="put note request example"/>
 
 #### DELETE:
 
@@ -44,7 +46,7 @@ URI: http://localhost:3001/api/users
 
 URI: http://localhost:3001/api/users
 
-<img src="./public/examples/post-user.png" alt="post user request example"/>
+<img src="./public/examples/post_user.svg" alt="post user request example"/>
 
 ## Login:
 
@@ -54,4 +56,4 @@ URI: http://localhost:3001/api/users
 
 URI: http://localhost:3001/api/login
 
-<img src="./public/examples/post-login.png" alt="post login request example"/>
+<img src="./public/examples/post_login." alt="post login request example"/>
