@@ -43,8 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
  * Script to set is-active in dropdown menu to deploy it
  */
 
-const dropdown = document.querySelector(".dropdown");
-dropdown.addEventListener("click", function (event) {
-    event.stopPropagation();
-    dropdown.classList.toggle("is-active");
+const dropdown = document.querySelectorAll(".dropdown");
+dropdown.forEach((el) => {
+    el.addEventListener("click", function (event) {
+        event.stopPropagation();
+        el.classList.toggle("is-active");
+    });
 });
