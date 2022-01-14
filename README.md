@@ -28,7 +28,7 @@ URI: http://localhost:3001/api/notes
 
 URI: http://localhost:3001/api/notes/id
 
-<img src="./public/examples/put_note.png" alt="put note request example"/>
+<img src="./public/examples/put_note.png" style="width:430px" alt="put note request example"/>
 
 #### DELETE:
 
@@ -46,7 +46,7 @@ URI: http://localhost:3001/api/users
 
 URI: http://localhost:3001/api/users
 
-<img src="./public/examples/post_user.png" alt="post user request example"/>
+<img src="./public/examples/post_user.png" style="width:430px" alt="post user request example"/>
 
 ## Login:
 
@@ -56,4 +56,4 @@ URI: http://localhost:3001/api/users
 
 URI: http://localhost:3001/api/login
 
-<img src="./public/examples/post_login.png" alt="post login request example"/>
+<img src="./public/examples/post_login.png" style="width:430px" alt="post login request example"/>
