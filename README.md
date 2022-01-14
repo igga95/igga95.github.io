@@ -20,13 +20,13 @@ URI: http://localhost:3001/api/notes/id
 
 URI: http://localhost:3001/api/notes
 
-<img src="./public/examples/post-note.svg" alt="post note request example"/>
+<img src="./public/examples/post-note.png" alt="post note request example"/>
 
 #### PUT:
 
 URI: http://localhost:3001/api/notes/id
 
-<img src="./public/examples/put-note.svg" alt="put note request example"/>
+<img src="./public/examples/put-note.png" alt="put note request example"/>
 
 #### DELETE:
 
@@ -44,7 +44,7 @@ URI: http://localhost:3001/api/users
 
 URI: http://localhost:3001/api/users
 
-<img src="./public/examples/post-user.svg" alt="post user request example"/>
+<img src="./public/examples/post-user.png" alt="post user request example"/>
 
 ## Login:
 
@@ -54,4 +54,4 @@ URI: http://localhost:3001/api/users
 
 URI: http://localhost:3001/api/login
 
-<img src="./public/examples/post-login.svg" alt="post login request example"/>
+<img src="./public/examples/post-login.png" alt="post login request example"/>
