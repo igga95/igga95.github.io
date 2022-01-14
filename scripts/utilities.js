@@ -50,3 +50,21 @@ dropdown.forEach((el) => {
         el.classList.toggle("is-active");
     });
 });
+
+// const cards = document.querySelectorAll(".card-content .content");
+// let heightArr = [];
+
+// window.addEventListener("resize", (e) => {
+//     e.preventDefault();
+//     for (const card of cards) {
+//         heightArr.push(card.clientHeight);
+//     }
+//     const maxHeight = Math.max(...heightArr);
+//     heightArr = [];
+//     for (const card of cards) {
+//         // document.getElementById('div_register').setAttribute("style","width:500px");
+//         card.setAttribute("style", `width:${maxHeight}px`);
+//     }
+// });
+
+// console.log(maxHeight);

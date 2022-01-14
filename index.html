@@ -11,7 +11,7 @@
     <script defer src="./utils/const.js"></script>
     <script defer src="./scripts/utilities.js"></script>
     <script defer src="./scripts/scroll.js"></script>
-    <script defer src="./scripts/api.js"></script>
+    <script defer src="./scripts/apiTester.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
@@ -31,8 +31,7 @@
                 <a id="home" class="navbar-item" href="#home-section">HOME</a>
                 <a id="skills" class="navbar-item" href="#skills-section">SKILLS</a>
                 <a id="proyects" class="navbar-item" href="#proyects-section">PROYECTS</a>
-                <a id="api-tester" class="navbar-item is-hidden-mobile popover-trigger" href="#api-tester-section">TEST
-                    APIs</a>
+                <a id="api-tester" class="navbar-item is-hidden-mobile" href="#api-tester-section">TEST APIs</a>
             </div>
         </div>
     </nav>
@@ -150,15 +149,17 @@
                                 </div>
                             </div>
                             <div class="content">
-                                Modified Code-along RESTful API made in the 'Free Fullstack Bootcamp' by <a
+                                Modified Code-along RESTful API with <strong>Authorization</strong> made in the 'Free
+                                Fullstack Bootcamp'
+                                by <a
                                     href="https://www.youtube.com/watch?v=wTpuKOhGfJE&list=PLV8x_i1fqBw0Kn_fBIZTa3wS_VZAqddX7&index=1&ab_channel=midudev"
                                     target="_blank">midudev</a>.
                                 <br>
                                 <a href="https://github.com/igga95/notes-api" target="_blank">View Code</a>
                             </div>
                             <div class="card-link">
+                                <button id="test-notes-api" class="button is-dark">Test API</button>
                             </div>
-                            <button id="test-notes-api" class="button is-dark">Test API</button>
                         </div>
                     </div>
                 </div>
@@ -182,8 +183,10 @@
                                 <br>
                                 <a href="https://github.com/igga95/YelpCamp" target="_blank">View Code</a>
                             </div>
-                            <a class="button is-dark" href="https://rocky-journey-20790.herokuapp.com/"
-                                target="_blank">Go to site</a>
+                            <div class="card-link">
+                                <a class="button is-dark" href="https://rocky-journey-20790.herokuapp.com/"
+                                    target="_blank">Go to site</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,13 +200,15 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-size-5">Twitter Like App</p>
+                                    <p class="title is-size-5">Tech Twitter</p>
                                 </div>
                             </div>
                             <div class="content">
                                 App based on Twitter with few functionalities.
                             </div>
-                            <a class="button is-dark" href="#" disabled>Go to site</a>
+                            <div class="card-link">
+                                <a class="button is-dark" href="#" disabled>Go to site</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +218,7 @@
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span class="underline-title">APIs Tester</span></h1>
             </div>
-            <div id="api-tester-notification-1" class="columns is-centered api-tester-notification">
+            <div class="columns is-centered api-tester-notification">
                 <div class="column is-9">
                     <div class="notification is-5 is-danger">
                         <button class="delete"></button>
@@ -221,7 +226,7 @@
                     </div>
                 </div>
             </div>
-            <div id="api-tester-notification-2" class="columns is-centered api-tester-notification">
+            <div class="columns is-centered api-tester-notification">
                 <div class="column is-9">
                     <div class="notification is-5 is-warning">
                         <button class="delete"></button>
@@ -232,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div id="api-tester-notification-2" class="columns is-centered api-tester-notification">
+            <div class="columns is-centered api-tester-notification">
                 <div class="column is-9">
                     <div class="notification is-5 is-info">
                         <button class="delete"></button>
@@ -244,7 +249,7 @@
             <div class="tabs is-centered">
                 <ul>
                     <!-- <li id="api-no-users" class="is-active"><a class="has-text-light">Notes-without-users</a></li> -->
-                    <li id="api-notes" class="is-active"><a class="has-text-light">Notes</a></li>
+                    <li id="api-tester-tabs-notes" class="is-active"><a class="has-text-light">Notes</a></li>
                 </ul>
             </div>
             <div class="endpoints">
@@ -260,13 +265,13 @@
                 </div>
             </div>
             <div class="buttons is-centered">
-                <button id="notes" class="button is-success">Notes</button>
-                <button id="users" class="button is-info">Users</button>
-                <button id="reload-users" class="button is-info">Reload users</button>
-                <div id="container-api-dropdown-users" class="dropdown">
+                <button id="api-notes-notes" class="button is-success">Notes</button>
+                <button id="api-notes-users" class="button is-info">Users</button>
+                <button id="api-notes-reload-users" class="button is-info">Reload users</button>
+                <div class="dropdown">
                     <div class="dropdown-trigger">
                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                            <span id="users-dropdown-leyend">Select user</span>
+                            <span id="api-notes-users-leyend">Select user</span>
                             <span class="icon-dropdown">
                                 <i class="bulma-arrow-mixin" aria-hidden="true"></i>
                                 <!-- <img src="./public/down-arrow-svgrepo-com.svg" aria-hidden="true"></> -->
@@ -274,7 +279,7 @@
                         </button>
                     </div>
                     <div id="users-dropdown-menu" class="dropdown-menu" role="menu">
-                        <div id="users-dropdown-content" class="dropdown-content">
+                        <div id="api-notes-users-content" class="dropdown-content">
                         </div>
                     </div>
                 </div>

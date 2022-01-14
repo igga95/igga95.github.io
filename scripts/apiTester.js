@@ -1,11 +1,12 @@
-const apiNotes = document.querySelector("#api-notes");
+"use strict";
 
-const notesBtn = document.querySelector("#notes");
-const usersBtn = document.querySelector("#users");
-const reloadUsers = document.querySelector("#reload-users");
-const usersDropdownLeyend = document.querySelector("#users-dropdown-leyend");
-const usersDropdownContainer = document.querySelector("#container-api-dropdown-users");
-const usersDropdownContent = document.querySelector("#users-dropdown-content");
+const apiNotes = document.querySelector("#api-tester-tabs-notes");
+
+const notesBtn = document.querySelector("#api-notes-notes");
+const usersBtn = document.querySelector("#api-notes-users");
+const reloadUsersBtn = document.querySelector("#api-notes-reload-users");
+const usersDropdownLeyend = document.querySelector("#api-notes-users-leyend");
+const usersDropdownContent = document.querySelector("#api-notes-users-content");
 
 const getAllBtn = document.querySelector("#get-all");
 const getOneBtn = document.querySelector("#get-one");
@@ -68,7 +69,7 @@ const idCheck = () => {
 };
 
 const createEventsUsers = () => {
-    const aElements = document.querySelectorAll("#users-dropdown-content .dropdown-item");
+    const aElements = document.querySelectorAll("#api-notes-users-content .dropdown-item");
     aElements.forEach((el) => {
         el.addEventListener("click", async () => {
             usersDropdownLeyend.innerText = el.innerText;
@@ -104,7 +105,7 @@ addEventListener("DOMContentLoaded", () => {
     createUsersDropdown();
 });
 
-reloadUsers.addEventListener("click", async (e) => {
+reloadUsersBtn.addEventListener("click", async (e) => {
     e.preventDefault();
     createUsersDropdown();
 });

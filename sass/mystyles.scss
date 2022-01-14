@@ -3,6 +3,7 @@
 
 $mobile-breakpoint: 769px;
 $tablet-breakpoint: 1025px;
+$desktop-breakpoint: 1216px;
 
 .section.is-large {
     @include until($mobile-breakpoint) {
@@ -86,5 +87,29 @@ $tablet-breakpoint: 1025px;
 }
 
 .card-content .content {
-    font-size: 0.9rem;
+    @include until($mobile-breakpoint) {
+        font-size: 0.7rem;
+        height: auto;
+    }
+    @include from($mobile-breakpoint) {
+        font-size: 0.9rem;
+        height: 130px;
+    }
+    @include from($desktop-breakpoint) {
+        font-size: 1.1rem;
+        height: 130px;
+    }
+}
+
+.card-content .card-link {
+    text-align: center;
+}
+
+.card-content .card-link .button {
+    @include until($mobile-breakpoint) {
+        font-size: 0.8rem;
+    }
+    @include from($mobile-breakpoint) {
+        font-size: 1rem;
+    }
 }
