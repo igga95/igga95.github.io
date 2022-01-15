@@ -16,27 +16,25 @@ body {
     font-family: "Space Mono", monospace;
 }
 
-#main {
-    background: hsl(0, 0%, 21%);
+.main {
+    /* background: hsl(0, 0%, 21%); */
     background: hsl(0, 0%, 26%);
 }
 
 .navbar {
     border-bottom: 0.5px solid hsl(0, 0%, 96%);
-    /* font-family: "Space Mono", monospace; */
 }
 
 .navbar-menu {
     background: hsl(0, 0%, 21%);
 }
-.navbar-item {
-    color: hsl(0, 0%, 96%);
+
+.navbar .dropdown-content {
+    background: hsl(0, 0%, 21%);
 }
 
 #home-section {
     font-family: "Roboto Mono", monospace;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .section-title {
@@ -51,9 +49,9 @@ body {
     text-align: center;
 }
 
-/* .card .card-content .content {
-    height: 130px;
-} */
+.card .card-content .content {
+    font-family: "Roboto Mono", monospace;
+}
 
 .card .card-image img {
     object-fit: cover;

@@ -80,7 +80,7 @@ const createEventsUsers = () => {
 };
 
 const removeUsers = () => {
-    const aElements = document.querySelectorAll("#users-dropdown-content .dropdown-item");
+    const aElements = document.querySelectorAll("#api-notes-users-content .dropdown-item");
     aElements.forEach((el) => {
         el.remove();
     });

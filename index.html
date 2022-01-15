@@ -28,24 +28,41 @@
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-                <a id="home" class="navbar-item" href="#home-section">HOME</a>
-                <a id="skills" class="navbar-item" href="#skills-section">SKILLS</a>
-                <a id="proyects" class="navbar-item" href="#proyects-section">PROYECTS</a>
-                <a id="api-tester" class="navbar-item is-hidden-mobile" href="#api-tester-section">TEST APIs</a>
+                <a id="home" class="navbar-item" href="#home-section">INICIO</a>
+                <a id="skills" class="navbar-item" href="#skills-section">HABILIDADES</a>
+                <a id="proyects" class="navbar-item" href="#proyects-section">PROYECTOS</a>
+                <a id="api-tester" class="navbar-item is-hidden-mobile" href="#api-tester-section">PROBAR APIs</a>
+                <div class="dropdown navbar-item">
+                    <div class="dropdown-trigger">
+                        <button class="button is-outline is-dark" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span>ES</span>
+                            <span class="icon is-small">
+                                <i class="bulma-arrow-mixin-white" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                            <button class="button is-dark dropdown-item">ES</button>
+                            <button class="button is-dark dropdown-item">EN</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
-    <main id="main">
+    <main class="main en">
         <section id="home-section" class="section is-large">
             <div class="content">
-                <p class="title is-size-5-mobile is-size-2 has-text-light"><span>Hi.</span> My name is</p>
-                <p class="title is-size-4-mobile is-size-1"><strong class="has-text-light">Gabriel Iglesias</strong></p>
-                <p class="title is-size-5-mobile is-size-2 has-text-light">I'm a Jr. Backend Developer</p>
-                <p class="is-size-6-mobile is-size-5 has-text-light">
-                    I'm a Electronic Engineering student and I enjoy programming.
+                <p class="title is-size-5-mobile is-size-2 has-text-light home-text-1">Hola. Mi nombre es</p>
+                <p class="title is-size-4-mobile is-size-1"><strong class="has-text-light home-text-2">Gabriel
+                        Iglesias</strong></p>
+                <p class="title is-size-5-mobile is-size-2 has-text-light home-text-3">Soy Desarrollador Backend Jr.</p>
+                <p class="is-size-6-mobile is-size-5 has-text-light home-text-4">
+                    Soy estudiante de Ingeniería Electrónica y disfruto programar.
                 </p>
-                <p class="is-size-6-mobile is-size-5 has-text-light">
-                    I'm looking for my first job as Software Developer.
+                <p class="is-size-6-mobile is-size-5 has-text-light home-text-5">
+                    Estoy en busca de mi primer trabajo como Desarrollador de Software.
                 </p>
                 <p class="social-media-icons">
                     <span class="icon">
@@ -61,11 +78,13 @@
         </section>
         <section id="skills-section" class="section ">
             <div class="section-title">
-                <h1 class="title is-size-4 has-text-light"><span class="underline-title">Skills</span></h1>
+                <h1 class="title is-size-4 has-text-light section-text-1"><span
+                        class="underline-title">Habilidades</span>
+                </h1>
             </div>
             <div class="columns is-centered is-vcentered">
                 <div class="column is-6">
-                    <h2 class="subtitle is-size-5 has-text-light">What I use</h2>
+                    <h2 class="subtitle is-size-5 has-text-light section-text-2">Lo que he usado hasta este momento</h2>
                 </div>
             </div>
             <div class="columns is-centered is-vcentered">
@@ -110,7 +129,8 @@
             </div>
             <div class="columns is-centered is-vcentered">
                 <div class="column is-6">
-                    <h2 class="subtitle is-size-5 has-text-light">What I would like to learn</h2>
+                    <h2 class="subtitle is-size-5 has-text-light section-text-3">Lo que me gustaría aprender en un
+                        futuro</h2>
                 </div>
             </div>
             <div class="columns is-centered is-vcentered">
@@ -132,7 +152,9 @@
         </section>
         <section id="proyects-section" class="section">
             <div class="section-title">
-                <h1 class="title is-size-4 has-text-light"><span class="underline-title">Proyects</span></h1>
+                <h1 class="title is-size-4 has-text-light"><span
+                        class="underline-title proyects-text-1">Proyectos</span>
+                </h1>
             </div>
             <div class="columns is-centered is-vcentered">
                 <div class="column is-9-mobile is-4-tablet is-3-desktop is-3-fullhd">
@@ -145,20 +167,20 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-size-5">Notes-REST-API</p>
+                                    <p class="title">Notes-REST-API</p>
                                 </div>
                             </div>
                             <div class="content">
-                                Modified Code-along RESTful API with <strong>Authorization</strong> made in the 'Free
-                                Fullstack Bootcamp'
-                                by <a
+                                <span class="proyects-text-2">API REST de notas con Autorización. Basada en 'Free
+                                    Fullstack Bootcamp' de </span> <a
                                     href="https://www.youtube.com/watch?v=wTpuKOhGfJE&list=PLV8x_i1fqBw0Kn_fBIZTa3wS_VZAqddX7&index=1&ab_channel=midudev"
                                     target="_blank">midudev</a>.
                                 <br>
-                                <a href="https://github.com/igga95/notes-api" target="_blank">View Code</a>
+                                <a class="proyects-text-3" href="https://github.com/igga95/notes-api"
+                                    target="_blank">Ver código</a>
                             </div>
                             <div class="card-link">
-                                <button id="test-notes-api" class="button is-dark">Test API</button>
+                                <button id="test-notes-api" class="button is-dark proyects-text-4">Probar API</button>
                             </div>
                         </div>
                     </div>
@@ -173,19 +195,20 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-size-5">Yelp-Camp</p>
+                                    <p class="title">Yelp-Camp</p>
                                 </div>
                             </div>
                             <div class="content">
-                                Code-along final proyect of 'The Web Development Bootcamp' by <a
-                                    href="https://www.youtube.com/c/ColtSteeleCode/featured" target="_blank">Colt
-                                    Steele</a>.
+                                <span class="proyects-text-5">Proyecto final (Code-along) del 'The Web Development
+                                    Bootcamp' de </span><a href="https://www.youtube.com/c/ColtSteeleCode/featured"
+                                    target="_blank">Colt Steele</a>.
                                 <br>
-                                <a href="https://github.com/igga95/YelpCamp" target="_blank">View Code</a>
+                                <a class="proyects-text-3" href="https://github.com/igga95/YelpCamp" target="_blank">Ver
+                                    código</a>
                             </div>
                             <div class="card-link">
-                                <a class="button is-dark" href="https://rocky-journey-20790.herokuapp.com/"
-                                    target="_blank">Go to site</a>
+                                <a class="button is-dark proyects-text-6"
+                                    href="https://rocky-journey-20790.herokuapp.com/" target="_blank">Ir al sitio</a>
                             </div>
                         </div>
                     </div>
@@ -200,14 +223,14 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-size-5">Tech Twitter</p>
+                                    <p class="title">Tech Twitter</p>
                                 </div>
                             </div>
-                            <div class="content">
-                                App based on Twitter with few functionalities.
+                            <div class="content proyects-text-7">
+                                Página basada en Twitter enfocada a IT.
                             </div>
                             <div class="card-link">
-                                <a class="button is-dark" href="#" disabled>Go to site</a>
+                                <a class="button is-dark proyects-text-6" href="#" disabled>Ir al sitio</a>
                             </div>
                         </div>
                     </div>
@@ -216,13 +239,15 @@
         </section>
         <section id="api-tester-section" class="section is-hidden-mobile">
             <div class="section-title">
-                <h1 class="title is-size-4 has-text-light"><span class="underline-title">APIs Tester</span></h1>
+                <h1 class="title is-size-4 has-text-light"><span class="underline-title tester-text-1">Probador
+                        APIs</span></h1>
             </div>
             <div class="columns is-centered api-tester-notification">
                 <div class="column is-9">
                     <div class="notification is-5 is-danger">
                         <button class="delete"></button>
-                        For now the API Tester it is not available on mobile devices.
+                        <span class="tester-text-2">Por ahora el probador de APIs no está disponible en dispositivos
+                            móviles.</span>
                     </div>
                 </div>
             </div>
@@ -230,10 +255,10 @@
                 <div class="column is-9">
                     <div class="notification is-5 is-warning">
                         <button class="delete"></button>
-                        In the request field (left), the data needs to be written in JSON format (with
-                        keys between double quotes and without trailing commas).
-                        Test cases can be found in README.md -> <a href="https://github.com/igga95/personal-portfolio"
-                            target="_blank">Github</a>
+                        <span class="tester-text-3">En el campo de request.body (izquierda), los datos deben ser
+                            escritos con formato JSON (con los keys entre comillas dobles y sin comas finales). Se
+                            pueden encontrar ejemplos de usos en README.md -> </span><a
+                            href="https://github.com/igga95/personal-portfolio" target="_blank">Github</a>
                     </div>
                 </div>
             </div>
@@ -241,22 +266,23 @@
                 <div class="column is-9">
                     <div class="notification is-5 is-info">
                         <button class="delete"></button>
-                        For a newly created user to be used in this API Tester, his username and password must be the
-                        same.
+                        <span class="tester-text-4">Para poder utilizar el probador de API con usuario creado
+                            recientemente, su usuario y contraseña deberán ser la misma.</span>
                     </div>
                 </div>
             </div>
             <div class="tabs is-centered">
                 <ul>
-                    <!-- <li id="api-no-users" class="is-active"><a class="has-text-light">Notes-without-users</a></li> -->
-                    <li id="api-tester-tabs-notes" class="is-active"><a class="has-text-light">Notes</a></li>
+                    <li id="api-tester-tabs-notes" class="is-active"><a class="has-text-light">Notes-API</a>
+                    </li>
                 </ul>
             </div>
             <div class="endpoints">
                 <div class="columns is-centered">
                     <div class="column is-10">
-                        <p class="is-size-5 has-text-light">Available endpoints (<a class="is-size-5 has-text-light"
-                                href="https://github.com/igga95/personal-portfolio" target="_blank">Documentation</a>)
+                        <p class="is-size-5 has-text-light"><span class="tester-text-6">Endpoints disponibles </span>(<a
+                                class="is-size-5 has-text-light tester-text-7"
+                                href="https://github.com/igga95/personal-portfolio" target="_blank">Documentación</a>)
                         </p>
                         <p class="is-size-6 has-text-light">Notes -> http://localhost:3001/api/notes</p>
                         <p class="is-size-6 has-text-light">Users -> http://localhost:3001/api/users</p>
@@ -265,16 +291,15 @@
                 </div>
             </div>
             <div class="buttons is-centered">
-                <button id="api-notes-notes" class="button is-success">Notes</button>
-                <button id="api-notes-users" class="button is-info">Users</button>
-                <button id="api-notes-reload-users" class="button is-info">Reload users</button>
+                <button id="api-notes-notes" class="button is-success tester-text-5">Notas</button>
+                <button id="api-notes-users" class="button is-info tester-text-8">Usuarios</button>
+                <button id="api-notes-reload-users" class="button is-info tester-text-9">Recargar usuarios</button>
                 <div class="dropdown">
                     <div class="dropdown-trigger">
                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                            <span id="api-notes-users-leyend">Select user</span>
-                            <span class="icon-dropdown">
-                                <i class="bulma-arrow-mixin" aria-hidden="true"></i>
-                                <!-- <img src="./public/down-arrow-svgrepo-com.svg" aria-hidden="true"></> -->
+                            <span id="api-notes-users-leyend" class="tester-text-10">Seleccionar usuario</span>
+                            <span class="icon is-small">
+                                <i class="bulma-arrow-mixin-black" aria-hidden="true"></i>
                             </span>
                         </button>
                     </div>
@@ -285,11 +310,11 @@
                 </div>
             </div>
             <div class="buttons is-centered">
-                <button id="get-all" class="button is-info">GET all resources</button>
-                <button id="get-one" class="button is-info">GET one resource</button>
-                <button id="post" class="button is-info">POST one resource</button>
-                <button id="put" class="button is-info">PUT one resource</button>
-                <button id="delete" class="button is-info">DELETE one resource</button>
+                <button id="get-all" class="button is-info">GET all</button>
+                <button id="get-one" class="button is-info">GET one</button>
+                <button id="post" class="button is-info">POST one</button>
+                <button id="put" class="button is-info">PUT one</button>
+                <button id="delete" class="button is-info">DELETE one</button>
             </div>
             <div class="text-field-container">
                 <div class="columns is-centered">

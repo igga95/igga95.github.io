@@ -51,20 +51,20 @@ dropdown.forEach((el) => {
     });
 });
 
-// const cards = document.querySelectorAll(".card-content .content");
-// let heightArr = [];
+const textElements = [];
+for (const selector in TEXTS) {
+    const auxVar = document.querySelectorAll(selector);
+    for (const el of auxVar) textElements.push([el, selector]);
+}
+const language = document.querySelectorAll(".navbar .dropdown-content .button");
+const languageLabel = document.querySelector(".navbar .dropdown-trigger .button span");
 
-// window.addEventListener("resize", (e) => {
-//     e.preventDefault();
-//     for (const card of cards) {
-//         heightArr.push(card.clientHeight);
-//     }
-//     const maxHeight = Math.max(...heightArr);
-//     heightArr = [];
-//     for (const card of cards) {
-//         // document.getElementById('div_register').setAttribute("style","width:500px");
-//         card.setAttribute("style", `width:${maxHeight}px`);
-//     }
-// });
-
-// console.log(maxHeight);
+for (const btn of language) {
+    btn.addEventListener("click", () => {
+        languageLabel.innerText = btn.innerText;
+        const lowerText = btn.innerText.toLowerCase();
+        textElements.map((el) => {
+            el[0].innerText = TEXTS[el[1]][lowerText];
+        });
+    });
+}

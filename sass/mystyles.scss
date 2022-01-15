@@ -62,8 +62,12 @@ $desktop-breakpoint: 1216px;
     }
 }
 
-.bulma-arrow-mixin {
+.bulma-arrow-mixin-black {
     @include arrow(black);
+}
+
+.bulma-arrow-mixin-white {
+    @include arrow(white);
 }
 
 .image.is-96x96 {
@@ -86,9 +90,22 @@ $desktop-breakpoint: 1216px;
     }
 }
 
+.card-content .title {
+    height: auto;
+    @include until($mobile-breakpoint) {
+        font-size: 1rem;
+    }
+    @include from($mobile-breakpoint) {
+        font-size: 1.2rem;
+    }
+    @include from($desktop-breakpoint) {
+        font-size: 1.5rem;
+    }
+}
+
 .card-content .content {
     @include until($mobile-breakpoint) {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         height: auto;
     }
     @include from($mobile-breakpoint) {

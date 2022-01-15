@@ -7896,8 +7896,24 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .column.is-9-mobile {
     margin: auto; } }
 
-.bulma-arrow-mixin {
+.bulma-arrow-mixin-black {
   border: 3px solid black;
+  border-radius: 2px;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  display: block;
+  height: 0.625em;
+  margin-top: -0.4375em;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  width: 0.625em; }
+
+.bulma-arrow-mixin-white {
+  border: 3px solid white;
   border-radius: 2px;
   border-right: 0;
   border-top: 0;
@@ -7929,9 +7945,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       height: 64px;
       width: 64px; } }
 
+.card-content .title {
+  height: auto; }
+  @media screen and (max-width: 768px) {
+    .card-content .title {
+      font-size: 1rem; } }
+  @media screen and (min-width: 769px) {
+    .card-content .title {
+      font-size: 1.2rem; } }
+  @media screen and (min-width: 1216px) {
+    .card-content .title {
+      font-size: 1.5rem; } }
+
 @media screen and (max-width: 768px) {
   .card-content .content {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     height: auto; } }
 
 @media screen and (min-width: 769px) {
