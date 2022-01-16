@@ -7930,9 +7930,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 768px) {
   .image.is-96x96 {
-    width: 64px;
-    height: 64px;
-    font-size: 0.7rem; } }
+    font-size: 0.8rem; } }
 
 .image.is-96x96 img {
   background: white; }
@@ -7971,9 +7969,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .card-content .content {
     font-size: 1.1rem;
     height: 130px; } }
-
-.card-content .card-link {
-  text-align: center; }
 
 @media screen and (max-width: 768px) {
   .card-content .card-link .button {

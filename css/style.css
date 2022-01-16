@@ -49,6 +49,10 @@ body {
     text-align: center;
 }
 
+.card-content .card-link {
+    text-align: center;
+}
+
 .card .card-content .content {
     font-family: "Roboto Mono", monospace;
 }
@@ -81,7 +85,14 @@ body {
 
 .skills-figure-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.8rem;
+}
+
+.image.is-96x96 {
+    min-width: 96px;
+    min-height: 96px;
 }
 
 figcaption {
