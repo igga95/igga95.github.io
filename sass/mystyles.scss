@@ -78,6 +78,7 @@ $desktop-breakpoint: 1216px;
 
 .image.is-96x96 img {
     background: white;
+    border-radius: 10px;
     @include until($mobile-breakpoint) {
         width: 48px;
         height: 48px;

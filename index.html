@@ -6,35 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./css/bulma-styles.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./utils/const.js"></script>
-    <script defer src="./scripts/utilities.js"></script>
-    <script defer src="./scripts/scroll.js"></script>
-    <script defer src="./scripts/apiTester.js"></script>
+    <link href="./css/bulma-styles.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./utils/const.js" defer></script>
+    <script src="./scripts/utilities.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
+    <script src="./scripts/apiTester.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
     <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a id="nav-logo" class="navbar-item" href="#home-section"><strong>Portfolio</strong></a>
-            <a role="button" class="navbar-burger is-dark" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
+            <a class="navbar-item" id="nav-logo" href="#home-section"><strong>Portfolio</strong></a>
+            <a class="navbar-burger is-dark" data-target="navbarBasicExample" role="button" aria-expanded="false"
+                aria-label="menu">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-menu" id="navbarBasicExample">
             <div class="navbar-end">
-                <a id="home" class="navbar-item" href="#home-section">INICIO</a>
-                <a id="skills" class="navbar-item" href="#skills-section">HABILIDADES</a>
-                <a id="proyects" class="navbar-item" href="#proyects-section">PROYECTOS</a>
-                <a id="api-tester" class="navbar-item is-hidden-mobile" href="#api-tester-section">PROBAR APIs</a>
+                <a class="navbar-item" id="home" href="#home-section">INICIO</a>
+                <a class="navbar-item" id="skills" href="#skills-section">HABILIDADES</a>
+                <a class="navbar-item" id="proyects" href="#proyects-section">PROYECTOS</a>
+                <a class="navbar-item is-hidden-mobile" id="api-tester" href="#api-tester-section">PROBAR APIs</a>
                 <div class="dropdown navbar-item">
                     <div class="dropdown-trigger">
-                        <button class="button is-outline is-dark" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <button class="button is-outline is-dark" aria-controls="dropdown-menu" aria-haspopup="true">
                             <span>ES</span>
                             <span class="icon is-small">
                                 <i class="bulma-arrow-mixin-white" aria-hidden="true"></i>
@@ -52,7 +52,7 @@
         </div>
     </nav>
     <main class="main">
-        <section id="home-section" class="section is-large">
+        <section class="section is-large" id="home-section">
             <div class="content">
                 <p class="title is-size-5-mobile is-size-2 has-text-light home-text-1">Hola. Mi nombre es</p>
                 <p class="title is-size-4-mobile is-size-1"><strong class="has-text-light home-text-2">Gabriel
@@ -67,16 +67,16 @@
                 <p class="social-media-icons">
                     <span class="icon">
                         <a href="https://github.com/igga95?tab=repositories" target="_blank"><img
-                                src="./public/github-light-48.png"></img></a>
+                                src="./public/github-light-48.png"></a>
                     </span>
                     <span class="icon">
                         <a href="https://www.linkedin.com/in/gabriel-iglesias-1ba083204/" target="_blank"><img
-                                src="./public/linkedin-light-48.png"></img></a>
+                                src="./public/linkedin-light-48.png"></a>
                     </span>
                 </p>
             </div>
         </section>
-        <section id="skills-section" class="section ">
+        <section class="section " id="skills-section">
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span
                         class="underline-title section-text-1">Habilidades</span>
@@ -154,7 +154,7 @@
                 </figure>
             </div>
         </section>
-        <section id="proyects-section" class="section">
+        <section class="section" id="proyects-section">
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span
                         class="underline-title proyects-text-1">Proyectos</span>
@@ -184,7 +184,7 @@
                                     target="_blank">Ver código</a>
                             </div>
                             <div class="card-link">
-                                <button id="test-notes-api" class="button is-dark proyects-text-4">Probar API</button>
+                                <button class="button is-dark proyects-text-4" id="test-notes-api">Probar API</button>
                             </div>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
                 </div>
             </div>
         </section>
-        <section id="api-tester-section" class="section is-hidden-mobile">
+        <section class="section is-hidden-mobile" id="api-tester-section">
             <div class="section-title">
                 <h1 class="title is-size-4 has-text-light"><span class="underline-title tester-text-1">Probador
                         APIs</span></h1>
@@ -277,7 +277,7 @@
             </div>
             <div class="tabs is-centered">
                 <ul>
-                    <li id="api-tester-tabs-notes" class="is-active"><a class="has-text-light">Notes-API</a>
+                    <li class="is-active" id="api-tester-tabs-notes"><a class="has-text-light">Notes-API</a>
                     </li>
                 </ul>
             </div>
@@ -295,30 +295,30 @@
                 </div>
             </div>
             <div class="buttons is-centered">
-                <button id="api-notes-notes" class="button is-success tester-text-5">Notas</button>
-                <button id="api-notes-users" class="button is-info tester-text-8">Usuarios</button>
-                <button id="api-notes-reload-users" class="button is-info tester-text-9">Recargar usuarios</button>
+                <button class="button is-success tester-text-5" id="api-notes-notes">Notas</button>
+                <button class="button is-info tester-text-8" id="api-notes-users">Usuarios</button>
+                <button class="button is-info tester-text-9" id="api-notes-reload-users">Recargar usuarios</button>
                 <div class="dropdown">
                     <div class="dropdown-trigger">
-                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                            <span id="api-notes-users-leyend" class="tester-text-10">Seleccionar usuario</span>
+                        <button class="button" aria-controls="dropdown-menu3" aria-haspopup="true">
+                            <span class="tester-text-10" id="api-notes-users-leyend">Seleccionar usuario</span>
                             <span class="icon is-small">
                                 <i class="bulma-arrow-mixin-black" aria-hidden="true"></i>
                             </span>
                         </button>
                     </div>
-                    <div id="users-dropdown-menu" class="dropdown-menu" role="menu">
-                        <div id="api-notes-users-content" class="dropdown-content">
+                    <div class="dropdown-menu" id="users-dropdown-menu" role="menu">
+                        <div class="dropdown-content" id="api-notes-users-content">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="buttons is-centered">
-                <button id="get-all" class="button is-info">GET all</button>
-                <button id="get-one" class="button is-info">GET one</button>
-                <button id="post" class="button is-info">POST one</button>
-                <button id="put" class="button is-info">PUT one</button>
-                <button id="delete" class="button is-info">DELETE one</button>
+                <button class="button is-info" id="get-all">GET all</button>
+                <button class="button is-info" id="get-one">GET one</button>
+                <button class="button is-info" id="post">POST one</button>
+                <button class="button is-info" id="put">PUT one</button>
+                <button class="button is-info" id="delete">DELETE one</button>
             </div>
             <div class="text-field-container">
                 <div class="columns is-centered">
@@ -329,7 +329,7 @@
                             </a>
                         </p>
                         <p class="control is-expanded">
-                            <input id="uri" class="input" type="text">
+                            <input class="input" id="uri" type="text">
                         </p>
                     </div>
                     <div class="field has-addons column is-5">
@@ -339,19 +339,19 @@
                             </a>
                         </p>
                         <p class="control is-expanded">
-                            <input id="resource-id" class="input" type="text">
+                            <input class="input" id="resource-id" type="text">
                         </p>
                     </div>
                 </div>
                 <div class="columns is-centered">
                     <div class="column is-5">
                         <div class="control">
-                            <textarea id="api-request" class="textarea has-fixed-size" rows="20"></textarea>
+                            <textarea class="textarea has-fixed-size" id="api-request" rows="20"></textarea>
                         </div>
                     </div>
                     <div class="column is-5">
                         <div class="control">
-                            <textarea id="api-response" class="textarea has-fixed-size" rows="20" readonly></textarea>
+                            <textarea class="textarea has-fixed-size" id="api-response" rows="20" readonly></textarea>
                         </div>
                     </div>
                 </div>
