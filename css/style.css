@@ -13,36 +13,63 @@ html {
 }
 
 body {
-    font-family: "Space Mono", monospace;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #3a3d42;
+    display: flex;
+    justify-content: center;
 }
 
-.main {
-    /* background: hsl(0, 0%, 21%); */
-    background: hsl(0, 0%, 26%);
+.container {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin); */
+    color: hsl(0, 0%, 96%);
+    width: 80%;
+    box-shadow: 0 0 5rem 1rem #282c34;
 }
 
 .navbar {
-    border-bottom: 0.5px solid hsl(0, 0%, 96%);
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
-.navbar-menu {
-    background: hsl(0, 0%, 21%);
+#nav-logo {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.navbar .dropdown-content {
-    background: hsl(0, 0%, 21%);
+.navbar .dropdown-content,
+.navbar-menu,
+.navbar-brand,
+.dropdown-menu {
+    background-color: #282c34;
+    background-color: #1d1f1d;
 }
 
-#home-section {
-    font-family: "Roboto Mono", monospace;
+.container > .navbar .navbar-brand {
+    margin-left: 0;
+}
+.container > .navbar .navbar-menu {
+    margin-right: 0;
 }
 
+.navbar .button {
+    background: #282c34;
+    background-color: #1d1f1d;
+    color: hsl(0, 0%, 96%);
+    border: none;
+}
 .section-title {
     margin: 30px auto;
-}
-
-.section-title .underline-title {
+    text-transform: uppercase;
     border-bottom: 1.5px solid hsl(0, 0%, 96%);
+    padding-bottom: 15px;
 }
 
 .section-title .title {

@@ -28,8 +28,8 @@ const TEXTS = {
     },
     "#skills": {
         selector: "#skills",
-        es: "HABILIDADES",
-        en: "SKILLS",
+        es: "TECNOLOGÍAS",
+        en: "TECHNOLOGIES",
     },
     "#proyects": {
         selector: "#proyects",
@@ -58,8 +58,8 @@ const TEXTS = {
         en: "I'm looking for my first job as Software Developer.",
     },
     ".section-text-1": {
-        es: "Habilidades",
-        en: "Skills",
+        es: "Tecnologías",
+        en: "Technologies",
     },
     ".section-text-2": {
         es: "Lo que he usado hasta este momento",
